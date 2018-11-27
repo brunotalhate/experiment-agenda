@@ -4,11 +4,17 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "generate:apk": "sh ./scripts/generate-apk.sh",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
   },
   "dependencies": {
     "react": "16.6.1",
     "react-native": "0.57.5",
+    "react-native-gesture-handler": "^1.0.9",
+    "react-native-pdf": "^5.0.9",
+    "react-navigation": "^3.0.1",
     "rn-fetch-blob": "^0.10.13"
   },
   "devDependencies": {

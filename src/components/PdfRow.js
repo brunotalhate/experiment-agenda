@@ -114,7 +114,7 @@ export class PdfRow extends Component {
             {Platform.OS === "android" && (
               <Button title="Baixar" onPress={this.onDownloadFile} />
             )}
-            <Button title="Abrir" onPress={this.onOpenFile} />
+            <Button title="Abrir" onPress={this.props.onViewPdfPress} />
             <Button title="Compartilhar" onPress={this.onShare} />
           </View>
         </ScrollView>

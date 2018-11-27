@@ -3,6 +3,9 @@ package com.agendaexp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.wonday.pdf.RCTPdfView;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,7 +27,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNFetchBlobPackage()
+            new RCTPdfView(),
+            new RNFetchBlobPackage(),
+            new RNGestureHandlerPackage()
       );
     }
 
